@@ -6,13 +6,11 @@ var treeObject = {
   character : myTreeCharacter
 };
 newLine = "";
-console.log(treeObject);
 
 function buildTree() {
   var treeStuff = validateInputs();
  growTree(treeStuff) }
 
-console.log(treeObject);
 function growTree(treeObject){
 for (var i = 1; i <= treeObject.height; i++) {
     newLine = "";
