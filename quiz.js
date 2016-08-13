@@ -15,7 +15,7 @@ function growTree(treeObject){
 for (var i = 1; i <= treeObject.height; i++) {
     newLine = "";
     for (var j = 0; j <= treeObject.height-i-1; j++) {
-      newLine += "";
+      newLine += " ";
     }
 for (var j = 1; j<= 2*i - 1; j++) {
       newLine += treeObject.character;
@@ -25,7 +25,7 @@ for (var j = 1; j<= 2*i - 1; j++) {
     }
 }
 
-//*****************FUNCTION VALIDATES INPUT FROM USER TO ENSURE THERE ARE VALUES ENTERED IN BOTH BOXES*******
+//****FUNCTION VALIDATES INPUT FROM USER TO ENSURE THERE ARE VALUES ENTERED IN BOTH BOXES*******
 
 function validateInputs() {
   if (((document.getElementById("height").value).length == 0) || ((document.getElementById("character").value).length == 0)) {
