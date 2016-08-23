@@ -11,15 +11,15 @@ function buildTree() {
   var treeStuff = validateInputs();
  growTree(treeStuff) }
 
-function growTree(treeObject){
-for (var i = 1; i <= treeObject.height; i++) {
-    newLine = "";
-    for (var j = 0; j <= treeObject.height-i-1; j++) {
-      newLine += " ";
-    }
-for (var j = 1; j<= 2*i - 1; j++) {
-      newLine += treeObject.character;
-    }
+  function growTree(treeObject){
+  for (var i = 1; i <= treeObject.height; i++) {
+      newLine = "";
+      for (var j = 0; j <= treeObject.height-i-1; j++) {
+        newLine += " ";
+      }
+  for (var j = 1; j<= 2*i - 1; j++) {
+        newLine += treeObject.character;
+      }
     //LINE IS ENTERED TO BREAK THE LOOP AND THE FORUMLA CONTINUES ON THE NEXT LINE TO MAKE TREE SHAPE*****
       console.log(newLine);
     }
